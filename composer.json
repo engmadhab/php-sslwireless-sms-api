@@ -1,0 +1,40 @@
+{
+    "name": "madhab/php-sslwireless-sms",
+    "description": "PHP client for SSL Wireless SMS API",
+    "keywords": ["SSL Wireless", "php", "api", "sms", "php-ssl-sms"],
+    "type": "library",
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/guzzle": "^6.2",
+        "ext-simplexml": "*"
+    },
+
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "madhab Bin Azhar",
+            "email": "madhab.dns@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Madhab\\SslWSms\\": "src/"
+        },
+        "files": [
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Madhab\\SslWSms\\SslWSmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Madhab\\SslWSms\\Facades\\Sms"
+            }
+        }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}
