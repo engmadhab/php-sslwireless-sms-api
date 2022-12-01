@@ -10,7 +10,7 @@ abstract class AbstractApi
     protected $client;
     protected $parameters = [];
     protected $config;
-    //protected $personalToken;
+    //protected $personalToken;////
     private $requestMethods = [
         'GET',
         'POST',
